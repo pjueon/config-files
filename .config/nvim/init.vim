@@ -5,7 +5,6 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-:set clipboard^=unnamed,unnamedplus
 
 call plug#begin()
 
