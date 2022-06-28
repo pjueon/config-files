@@ -11,7 +11,7 @@ call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'Mofiqul/vscode.nvim' " vs code theme
-
+Plug 'ryanoasis/vim-devicons' " vim-devicons
 call plug#end()
 
 nnoremap <C-t> :NERDTreeToggle<CR>
