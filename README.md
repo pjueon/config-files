@@ -38,3 +38,5 @@ nvim +'PlugInstall --sync' +qa
 update-alternatives --config editor
 # and select neovim
 ```
+
+6. Install `D2Coding_Nerd_font/D2Coding_Nerd_Font.ttf` and setup for your environment.
