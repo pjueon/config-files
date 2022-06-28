@@ -1,6 +1,13 @@
 # config-files
 This repository is just a backup for personal configuration files.
 
+## clone the repository
+```shell
+git clone https://github.com/pjueon/config-files.git
+cd config-files
+```
+
+
 ## neovim configurations
 1. install neovim 
 ```shell
