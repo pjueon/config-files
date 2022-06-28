@@ -20,3 +20,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir ~/.config/nvim # if not exist
 cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already exists
 ```
+
+4. install plugins from neovim
+```
+:PlugInstall
+```
+
+5. set neovim as the default editor (ubunt)
+```shell
+update-alternatives --config editor
+# and select neovim
+```
