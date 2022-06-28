@@ -33,7 +33,7 @@ cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already e
 :PlugInstall
 ```
 
-5. set neovim as the default editor (ubunt)
+5. set neovim as the default editor (Ubuntu)
 ```shell
 update-alternatives --config editor
 # and select neovim
