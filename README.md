@@ -24,7 +24,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 3. copy `.config/nvim/init.vim` from the repository to your `~/.config/nvim/init.vim`
 ```shell
-mkdir ~/.config/nvim # if not exist
+mkdir -p ~/.config/nvim
 cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already exists
 ```
 
