@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "start"
+echo "configuring neovim..."
 
 # install neovim
 sudo add-apt-repository ppa:neovim-ppa/stable 
@@ -17,3 +17,5 @@ cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already e
 
 # install plugins from neovim
 nvim +'PlugInstall --sync' +qa
+
+echo "configuring neovim done."

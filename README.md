@@ -11,12 +11,12 @@ cd config-files
 ## neovim configurations
 1. set the permission 
 ```shell
-chmod +x scripts/configure-neovim.sh
+chmod +x configure.sh
 ```
 
 2. run the configuration scripts
 ```shell
-scripts/configure-neovim.sh
+configure.sh
 ```
 
 
