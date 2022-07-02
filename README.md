@@ -12,8 +12,8 @@ cd config-files
 1. install neovim 
 ```shell
 sudo add-apt-repository ppa:neovim-ppa/stable 
-sudo apt-get update
-sudo apt-get install neovim
+sudo apt-get update -y
+sudo apt-get install neovim -y
 ```
 
 2. install [plug-vim](https://github.com/junegunn/vim-plug)
