@@ -8,7 +8,7 @@ sudo apt install git build-essential cmake -y
 sudo apt install pip3 python-is-python3 -y 
 
 # install neovim
-sudo apt-get install neovim -y
+sudo apt install neovim -y
 
 # install plug-vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
