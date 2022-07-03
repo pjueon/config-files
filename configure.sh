@@ -1,14 +1,21 @@
 #!/usr/bin/env bash
-echo "configuring neovim..."
 
-# install neovim
+echo "installing packages and tools..."
+
 sudo add-apt-repository ppa:neovim-ppa/stable 
 sudo apt-get update -y
+sudo apt-get install git build-essential cmake -y
+sudo apt install pip3 python-is-python3 -y 
+
+# install neovim
 sudo apt-get install neovim -y
 
 # install plug-vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+
+echo "configuring neovim..."
 
 
 # copy `.config/nvim/init.vim` from the repository to your `~/.config/nvim/init.vim`
