@@ -5,7 +5,7 @@ echo "installing packages and tools..."
 sudo add-apt-repository ppa:neovim-ppa/stable 
 sudo apt update -y
 sudo apt install git build-essential cmake -y
-sudo apt install pip3 python-is-python3 -y 
+sudo apt install python3-pip python-is-python3 -y 
 
 # install neovim
 sudo apt install neovim -y
