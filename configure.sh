@@ -3,8 +3,8 @@
 echo "installing packages and tools..."
 
 sudo add-apt-repository ppa:neovim-ppa/stable 
-sudo apt-get update -y
-sudo apt-get install git build-essential cmake -y
+sudo apt update -y
+sudo apt install git build-essential cmake -y
 sudo apt install pip3 python-is-python3 -y 
 
 # install neovim
