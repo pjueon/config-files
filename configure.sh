@@ -28,3 +28,9 @@ echo "configuring neovim done."
 
 # uninstall vim
 sudo apt remove vim -y
+
+# apt upgrade
+sudo apt upgrade -y
+
+# apt auto remove
+sudo apt autoremove -y
