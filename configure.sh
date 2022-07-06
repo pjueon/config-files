@@ -14,7 +14,6 @@ sudo apt install neovim -y
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-
 echo "configuring neovim..."
 
 
@@ -26,3 +25,6 @@ cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already e
 nvim +'PlugInstall --sync' +qa
 
 echo "configuring neovim done."
+
+# uninstall vim
+sudo apt remove vim -y
