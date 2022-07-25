@@ -7,6 +7,9 @@ sudo apt update -y
 sudo apt install git build-essential cmake -y
 sudo apt install python3-pip python-is-python3 -y 
 
+# apt upgrade
+sudo apt upgrade -y
+
 # install neovim
 sudo apt install neovim -y
 
@@ -28,9 +31,6 @@ echo "configuring neovim done."
 
 # uninstall vim
 sudo apt remove vim -y
-
-# apt upgrade
-sudo apt upgrade -y
 
 # apt auto remove
 sudo apt autoremove -y
