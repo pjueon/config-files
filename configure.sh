@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "configuration start"
+
 echo "installing packages and tools..."
 
 sudo add-apt-repository ppa:neovim-ppa/stable 
@@ -34,3 +36,5 @@ sudo apt remove vim -y
 
 # apt auto remove
 sudo apt autoremove -y
+
+echo "configuration done"
