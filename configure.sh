@@ -6,14 +6,10 @@ echo "installing packages and tools..."
 
 sudo add-apt-repository ppa:neovim-ppa/stable 
 sudo apt update -y
-sudo apt install git build-essential cmake -y
-sudo apt install python3-pip python-is-python3 -y 
+sudo apt install git build-essential cmake python3-pip python-is-python3 neovim -y
 
 # apt upgrade
 sudo apt upgrade -y
-
-# install neovim
-sudo apt install neovim -y
 
 # install plug-vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
