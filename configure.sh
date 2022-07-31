@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "configuration start"
+echo "====== configuration start ======"
 
 echo "installing packages and tools..."
 
@@ -37,4 +37,4 @@ sudo apt remove vim -y
 # apt auto remove
 sudo apt autoremove -y
 
-echo "configuration done"
+echo "====== configuration done ======"
