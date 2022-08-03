@@ -8,6 +8,9 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update -y
 sudo apt install git build-essential cmake python3-pip python-is-python3 neovim -y
 
+# update pip
+pip install --upgrade pip
+
 # install python packages
 pip install -r requirements.txt
 
