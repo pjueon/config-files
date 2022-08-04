@@ -8,8 +8,11 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update -y
 sudo apt install git build-essential cmake python3-pip python-is-python3 neovim -y
 
-# apt upgrade
-sudo apt upgrade -y
+# update pip
+pip install --upgrade pip
+
+# install python packages
+pip install -r requirements.txt
 
 # install plug-vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -26,6 +29,9 @@ cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already e
 nvim +'PlugInstall --sync' +qa
 
 echo "configuring neovim done."
+
+# apt upgrade
+sudo apt upgrade -y
 
 # uninstall vim
 sudo apt remove vim -y
