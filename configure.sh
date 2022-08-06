@@ -36,13 +36,14 @@ nvim +'PlugInstall --sync' +qa
 
 echo "configuring neovim done."
 
-# apt upgrade
-sudo apt upgrade -y
 
-# uninstall vim
+echo "uninstall the normal vim..."
 sudo apt remove vim -y
 
-# apt auto remove
+echo "apt upgrade..."
+sudo apt upgrade -y
+
+echo "apt auto remove..."
 sudo apt autoremove -y
 
 echo "====== configuration done ======"
