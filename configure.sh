@@ -4,8 +4,11 @@ echo "====== configuration start ======"
 
 echo "installing packages and tools..."
 
+echo "update apt repositories..."
 sudo add-apt-repository ppa:neovim-ppa/stable 
 sudo apt update -y
+
+echo "install apt packages..."
 sudo apt install git build-essential cmake python3-pip neovim -y
 
 # error on jetson (fix later)
