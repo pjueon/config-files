@@ -6,15 +6,18 @@ echo "installing packages and tools..."
 
 sudo add-apt-repository ppa:neovim-ppa/stable 
 sudo apt update -y
-sudo apt install git build-essential cmake python3-pip python-is-python3 neovim -y
+sudo apt install git build-essential cmake python3-pip neovim -y
 
-# update pip
-pip install --upgrade pip
+# error on jetson (fix later)
+sudi apt install python-is-python3 -y
 
-# install python packages
-pip install -r requirements.txt
+echo "update pip..."
+pip3 install --upgrade pip
 
-# install plug-vim
+echo "install python packages..."
+pip3 install -r requirements.txt
+
+echo "install plug-vim..."
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
