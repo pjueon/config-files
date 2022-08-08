@@ -34,8 +34,6 @@ cp ./.config/nvim/init.vim ~/.config/nvim/init.vim # will overwrite if already e
 # install plugins from neovim
 nvim +'PlugInstall --sync' +qa
 
-echo "configuring neovim done."
-
 
 echo "uninstall the normal vim..."
 sudo apt remove vim -y
