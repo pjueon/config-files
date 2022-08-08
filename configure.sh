@@ -12,7 +12,7 @@ echo "install apt packages..."
 sudo apt install git build-essential cmake python3-pip neovim -y
 
 # error on jetson (fix later)
-sudi apt install python-is-python3 -y
+sudo apt install python-is-python3 -y
 
 echo "update pip..."
 pip3 install --upgrade pip
